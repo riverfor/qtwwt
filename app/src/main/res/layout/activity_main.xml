@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        tools:context=".MainActivity"
+        android:paddingTop="40dp">
+
+    <EditText android:id="@+id/url"
+              android:layout_width="match_parent"
+              android:singleLine="true"
+              android:background="#FFFFFF"
+              android:text="https://s.qtad.qingting.fm/_ae_upload/Test_QingTing_29Mar.html"
+              android:layout_height="wrap_content"
+              android:hint="please input url"/>
+
+    <TextView
+            android:id="@+id/loadUrl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="start load url"
+            android:gravity="center"
+            android:background="#FFFFFF"/>
+
+    <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"/>
+
+</LinearLayout>
